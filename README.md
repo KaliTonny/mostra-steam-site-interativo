@@ -77,6 +77,15 @@ Adição de funcionalidades com JavaScript:
 - Integração com localStorage
 - Feedback visual para erros e sucesso
 
+2 - feat: implementa sistema de login e gerenciamento de sessão
+
+- Criação da página login.html
+- Verificação de usuário com localStorage
+- Funções login(), logout() e verificarUsuario()
+- Exibição do nome do usuário no sistema
+- Redirecionamento entre páginas
+- Controle de sessão ativa
+
 ---
 
 ##  **Preview**
