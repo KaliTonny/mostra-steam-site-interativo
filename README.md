@@ -66,6 +66,19 @@ Adição de funcionalidades com JavaScript:
 
 ---
 
+
+##  **Atualizações**
+
+1 - feat: adiciona sistema de cadastro com validações e armazenamento local
+
+- Criação da página cadastro.html
+- Implementação do formulário de cadastro
+- Validação de e-mail, senha e campos obrigatórios
+- Integração com localStorage
+- Feedback visual para erros e sucesso
+
+---
+
 ##  **Preview**
 
 <img width="1873" height="931" alt="Captura de tela_4-5-2026_163222_127 0 0 1" src="https://github.com/user-attachments/assets/881782ee-3121-49ba-ad7f-689a0c28d40d" />
