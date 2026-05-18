@@ -86,6 +86,14 @@ Adição de funcionalidades com JavaScript:
 - Redirecionamento entre páginas
 - Controle de sessão ativa
 
+3 - style: melhora interface visual e organização geral do projeto
+
+- Atualização do layout responsivo
+- Melhorias em hover, menus e navegação
+- Organização das pastas css/, js/ e img/
+- Atualização completa do README.md
+- Ajustes finais de UX/UI
+- Preparação do projeto para publicação no GitHub
 ---
 
 ##  **Preview**
