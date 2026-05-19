@@ -69,32 +69,72 @@ Adição de funcionalidades com JavaScript:
 
 ##  **Atualizações**
 
-1 - feat: adiciona sistema de cadastro com validações e armazenamento local
+## Atualizações do Projeto
 
-- Criação da página cadastro.html
-- Implementação do formulário de cadastro
-- Validação de e-mail, senha e campos obrigatórios
-- Integração com localStorage
-- Feedback visual para erros e sucesso
+### 1. Sistema de Cadastro
 
-2 - feat: implementa sistema de login e gerenciamento de sessão
+Implementação completa do sistema de cadastro de usuários.
 
-- Criação da página login.html
-- Verificação de usuário com localStorage
-- Funções login(), logout() e verificarUsuario()
-- Exibição do nome do usuário no sistema
-- Redirecionamento entre páginas
-- Controle de sessão ativa
+#### Funcionalidades adicionadas:
 
-3 - style: melhora interface visual e organização geral do projeto
+* Criação da página `cadastro.html`
+* Formulário de cadastro interativo
+* Validação de:
+  * Campos obrigatórios
+  * E-mail válido
+  * Senha mínima
+* Integração com `localStorage`
+* Feedback visual para erros e sucesso no cadastro
 
-- Atualização do layout responsivo
-- Melhorias em hover, menus e navegação
-- Organização das pastas css/, js/ e img/
-- Atualização completa do README.md
-- Ajustes finais de UX/UI
-- Preparação do projeto para publicação no GitHub
 ---
+
+### 2. Sistema de Login e Sessão
+
+Desenvolvimento do sistema de autenticação e controle de sessão.
+
+#### Funcionalidades adicionadas:
+
+* Criação da página `login.html`
+* Verificação de usuário utilizando `localStorage`
+* Implementação das funções:
+  * `login()`
+  * `logout()`
+  * `verificarUsuario()`
+* Exibição do nome do usuário logado
+* Redirecionamento automático entre páginas
+* Controle de sessão ativa
+
+---
+
+### 3. Busca, Favoritos e Perfil
+
+Novas funcionalidades interativas para melhorar a experiência do usuário.
+
+#### Funcionalidades adicionadas:
+
+* Campo de busca dinâmica
+* Filtragem de destinos em tempo real
+* Sistema para salvar destinos favoritos
+* Upload de foto de perfil
+* Atualização dinâmica das informações do usuário
+
+---
+
+### 4. Interface Visual e Organização
+
+Melhorias gerais no design, responsividade e estrutura do projeto.
+
+#### Melhorias realizadas:
+
+* Atualização do layout responsivo
+* Melhorias em menus e navegação
+* Hover effects nos botões
+* Organização das pastas:
+  * `css/`
+  * `js/`
+  * `img/`
+* Ajustes finais de UX/UI
+* Estrutura pronta para publicação no GitHub
 
 ##  **Preview**
 
