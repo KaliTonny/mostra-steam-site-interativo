@@ -1,4 +1,4 @@
-# 🌎 Turismo 360°
+# Turismo 360°
 
 Plataforma web interativa para explorar **Candeias-BA**, reunindo pontos turísticos, história, eventos, estabelecimentos, mapas e serviços em um só lugar.
 
