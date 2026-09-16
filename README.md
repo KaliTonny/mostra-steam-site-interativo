@@ -1,154 +1,231 @@
-#  **Turismo 360**
+# 🌎 Turismo 360°
 
-### Plataforma Interativa de Turismo
+Plataforma web interativa para explorar **Candeias-BA**, reunindo pontos turísticos, história, eventos, estabelecimentos, mapas e serviços em um só lugar.
 
----
-
-##  **Sobre o Projeto**
-
-O **Turismo 360** é uma aplicação web interativa desenvolvida para apresentar destinos turísticos de forma **moderna, visual e envolvente**.
-
-A proposta é proporcionar uma experiência de navegação fluida, permitindo ao usuário explorar diferentes locais, pontos de interesse e conteúdos de maneira dinâmica — simulando uma plataforma real de turismo digital.
-
----
-
-##  **Principais Funcionalidades**
-
-*  **Navegação intuitiva** entre múltiplas páginas *(Home, Explorar, Contato, Perfil)*
-*  **Manipulação do DOM** para atualização dinâmica de conteúdo
-*  **Eventos com JavaScript** (`addEventListener`)
-*  **Automações com `setInterval`**
-*  **Lógica condicional** aplicada à interação do usuário
-*  **Interface moderna** com layout organizado e responsivo
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ---
 
-##  **Visão do Projeto**
+## Nome do sistema
 
-O projeto foi desenvolvido com foco em:
+**Turismo 360°**
 
-* **Experiência do Usuário (UX)**
-* **Interface Visual (UI)**
-* **Código limpo e organizado**
-* **Integração entre design e interatividade**
+## Descrição da aplicação
+
+O Turismo 360° é uma aplicação web desenvolvida para apresentar e valorizar pontos turísticos, espaços religiosos, eventos, hotéis, restaurantes, mercados, áreas de lazer e outros serviços localizados em Candeias, Bahia.
+
+A plataforma reúne informações sobre a cidade em um ambiente interativo, permitindo que moradores e visitantes conheçam locais, consultem informações, utilizem recursos de mapa e tenham acesso a conteúdos relacionados à história e ao turismo de Candeias.
+
+O sistema também possui cadastro e login de usuários, verificação de e-mail, formulário de contato e integração com banco de dados.
+
+## Objetivo
+
+O objetivo do Turismo 360° é facilitar o acesso a informações turísticas e úteis sobre Candeias-BA por meio de uma plataforma digital moderna, acessível e interativa.
+
+O projeto busca contribuir para a valorização da história, da cultura e dos espaços da cidade, além de facilitar a localização de estabelecimentos e serviços para moradores e visitantes.
+
+## Tecnologias utilizadas
+
+### Front-End
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+
+### Back-End
+- Node.js
+- Express.js
+- Nodemailer
+- bcryptjs
+- dotenv
+- CORS
+
+### Banco de Dados
+- MySQL
+- mysql2
+
+### Serviços e ferramentas
+- Google Maps
+- Google Places API
+- Git
+- GitHub
+- MySQL Workbench
+- Visual Studio Code
+
+## Como instalar
+
+### 1. Baixar o projeto
+
+Clone o repositório:
+
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+Ou faça o download do projeto em formato ZIP e extraia os arquivos.
+
+### 2. Acessar a pasta do backend
+
+```bash
+cd backend
+```
+
+### 3. Instalar as dependências
+
+```bash
+npm install
+```
+
+### 4. Configurar o banco de dados
+
+Abra o MySQL Workbench e execute o arquivo SQL disponibilizado no projeto para criar e atualizar o banco de dados `turismo360`.
+
+### 5. Configurar as variáveis de ambiente
+
+Na pasta `backend`, copie o arquivo:
+
+```text
+.env.example
+```
+
+e crie um arquivo chamado:
+
+```text
+.env
+```
+
+Preencha as configurações necessárias do MySQL, Google Maps e serviço de e-mail.
+
+Exemplo:
+
+```env
+PORT=3000
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=SUA_SENHA
+DB_NAME=turismo360
+
+GOOGLE_MAPS_API_KEY=SUA_CHAVE
+
+EMAIL_USER=turismocandeias360@gmail.com
+EMAIL_PASS=SUA_SENHA_DE_APP
+EMAIL_DESTINO=turismocandeias360@gmail.com
+
+VERIFY_CODE_SECRET=SEU_SEGREDO_DE_VERIFICACAO
+```
+
+> **Importante:** o arquivo `.env` contém informações privadas e não deve ser enviado ao GitHub. O projeto utiliza `.env.example` apenas como modelo de configuração.
+
+## Como executar
+
+Abra o terminal na pasta `backend` e execute:
+
+```bash
+npm start
+```
+
+Após o servidor iniciar, acesse no navegador:
+
+```text
+http://localhost:3000
+```
+
+O backend deve estar em execução para que recursos como cadastro, login, contato, banco de dados e verificação de e-mail funcionem corretamente.
+
+## Estrutura do projeto
+
+```text
+Turismo360/
+│
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── .env.example
+│   │
+│   └── src/
+│       ├── config/
+│       │   └── db.js
+│       │
+│       ├── controllers/
+│       │   ├── authController.js
+│       │   ├── contactController.js
+│       │   ├── eventController.js
+│       │   ├── mapsController.js
+│       │   ├── placeController.js
+│       │   └── userController.js
+│       │
+│       ├── routes/
+│       │   ├── authRoutes.js
+│       │   ├── contactRoutes.js
+│       │   ├── eventRoutes.js
+│       │   ├── mapsRoutes.js
+│       │   ├── placeRoutes.js
+│       │   └── userRoutes.js
+│       │
+│       ├── services/
+│       │   ├── emailService.js
+│       │   └── googlePlacesService.js
+│       │
+│       └── data/
+│           └── fallbackData.js
+│
+├── frontend/
+│   ├── css/
+│   ├── js/
+│   ├── img/
+│   └── páginas HTML
+│
+├── database/
+│   └── arquivos SQL
+│
+├── .gitignore
+└── README.md
+```
+
+## Funcionalidades principais
+
+- Página inicial com informações sobre Candeias;
+- Exploração de pontos turísticos e locais da cidade;
+- Informações sobre a história de Candeias;
+- Visualização de eventos;
+- Integração com Google Maps;
+- Pesquisa de locais e serviços;
+- Categorias de hotéis, restaurantes, mercados, lazer e espaços religiosos;
+- Suporte aos idiomas português e inglês;
+- Tema claro e escuro;
+- Cadastro e login de usuários;
+- Verificação de e-mail por código de 6 dígitos;
+- Código de verificação com tempo de expiração;
+- Reenvio de código com cooldown;
+- Validação de senha forte;
+- Armazenamento seguro das senhas utilizando bcrypt;
+- Formulário de contato integrado ao MySQL;
+- Envio das mensagens de contato por e-mail;
+- Notificações visuais de sucesso e erro;
+- Proteção contra envios repetidos por meio de cooldown;
+- Interface responsiva para diferentes tamanhos de tela.
+
+## Integrantes
+
+- Etony Guedes
+- Geovanna Almeida
+- Nicolle Borges
+- Eric das Mercês
+
+## Instituição
+
+**SENAI Candeias**
+
+## Professor orientador
+
+**Adalberto Santana**
 
 ---
 
-##  **Tecnologias Utilizadas**
-
-<p>
-<strong>HTML5</strong> — Estrutura semântica<br>
-<strong>CSS3</strong> — Estilização e layout<br>
-<strong>JavaScript (ES6+)</strong> — Interatividade e lógica
-</p>
-
----
-
-##  **Histórico de Desenvolvimento**
-
-O projeto foi dividido em etapas claras:
-
-###  **1. Estrutura Inicial**
-
-Criação da base do projeto e organização das páginas principais.
-
-###  **2. Estilização**
-
-Implementação do design, layout e identidade visual.
-
-###  **3. Interatividade**
-
-Adição de funcionalidades com JavaScript:
-
-* Eventos
-* Manipulação do DOM
-* Automações
-
----
-
-
-##  **Atualizações**
-
-## Atualizações do Projeto
-
-### 1. Sistema de Cadastro
-
-Implementação completa do sistema de cadastro de usuários.
-
-#### Funcionalidades adicionadas:
-
-* Criação da página `cadastro.html`
-* Formulário de cadastro interativo
-* Validação de:
-  * Campos obrigatórios
-  * E-mail válido
-  * Senha mínima
-* Integração com `localStorage`
-* Feedback visual para erros e sucesso no cadastro
-
----
-
-### 2. Sistema de Login e Sessão
-
-Desenvolvimento do sistema de autenticação e controle de sessão.
-
-#### Funcionalidades adicionadas:
-
-* Criação da página `login.html`
-* Verificação de usuário utilizando `localStorage`
-* Implementação das funções:
-  * `login()`
-  * `logout()`
-  * `verificarUsuario()`
-* Exibição do nome do usuário logado
-* Redirecionamento automático entre páginas
-* Controle de sessão ativa
-
----
-
-### 3. Busca, Favoritos e Perfil
-
-Novas funcionalidades interativas para melhorar a experiência do usuário.
-
-#### Funcionalidades adicionadas:
-
-* Campo de busca dinâmica
-* Filtragem de destinos em tempo real
-* Sistema para salvar destinos favoritos
-* Upload de foto de perfil
-* Atualização dinâmica das informações do usuário
-
----
-
-### 4. Interface Visual e Organização
-
-Melhorias gerais no design, responsividade e estrutura do projeto.
-
-#### Melhorias realizadas:
-
-* Atualização do layout responsivo
-* Melhorias em menus e navegação
-* Hover effects nos botões
-* Organização das pastas:
-  * `css/`
-  * `js/`
-  * `img/`
-* Ajustes finais de UX/UI
-* Estrutura pronta para publicação no GitHub
-
-##  **Preview**
-
-<img width="1873" height="931" alt="Captura de tela_4-5-2026_163222_127 0 0 1" src="https://github.com/user-attachments/assets/881782ee-3121-49ba-ad7f-689a0c28d40d" />
-
-
----
-
-##  **Licença**
-
-Direitos Reservados a:
-Etony Guedes
-Geovanna Almeida
-Nicolle Borges
-Eric Mercês
-
----
+© 2026 — Turismo 360°
