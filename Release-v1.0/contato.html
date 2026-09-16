@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Contato | Turismo 360°
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <nav>
+    <a class="logo" href="home.html">
+     Turismo 360°
+    </a>
+    <button class="menu-toggle" id="menuToggle">
+     ☰
+    </button>
+    <div class="nav-links">
+     <a data-i18n="nav_home" href="home.html">
+     </a>
+     <a data-i18n="nav_about" href="sobre.html">
+     </a>
+     <a data-i18n="nav_projects" href="projetos.html">
+     </a>
+     <a data-i18n="nav_profile" href="perfil.html">
+     </a>
+     <a data-i18n="nav_settings" href="configuracoes.html">
+     </a>
+     <a data-i18n="nav_contact" href="contato.html">
+     </a>
+     <a data-auth="guest" data-i18n="nav_register" href="cadastro.html">
+     </a>
+     <a data-auth="guest" data-i18n="nav_login" href="login.html">
+     </a>
+     <button data-action="logout" data-auth="user" data-i18n="nav_logout">
+     </button>
+    </div>
+   </nav>
+  </header>
+  <main class="container">
+   <div class="page-heading">
+    <h1 data-i18n="contact_title">
+    </h1>
+    <p data-i18n="contact_intro">
+    </p>
+   </div>
+   <section class="card form-card">
+    <form class="form-grid" id="formContato">
+     <label data-i18n="name" for="nome">
+     </label>
+     <input data-i18n-placeholder="name_placeholder" id="nome" type="text"/>
+     <label data-i18n="email" for="email">
+     </label>
+     <input data-i18n-placeholder="email_placeholder" id="email" type="email"/>
+     <label data-i18n="message" for="mensagem">
+     </label>
+     <textarea data-i18n-placeholder="message_placeholder" id="mensagem"></textarea>
+     <button class="primary" data-i18n="send" type="submit">
+     </button>
+     <p id="formStatus">
+     </p>
+    </form>
+   </section>
+  </main>
+  <footer>
+   <div data-i18n="footer">
+   </div>
+   <div class="steam" data-i18n="steam">
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
