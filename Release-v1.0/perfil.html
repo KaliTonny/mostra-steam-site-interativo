@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Perfil | Turismo 360°
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <nav>
+    <a class="logo" href="home.html">
+     Turismo 360°
+    </a>
+    <button class="menu-toggle" id="menuToggle">
+     ☰
+    </button>
+    <div class="nav-links">
+     <a data-i18n="nav_home" href="home.html">
+     </a>
+     <a data-i18n="nav_about" href="sobre.html">
+     </a>
+     <a data-i18n="nav_projects" href="projetos.html">
+     </a>
+     <a data-i18n="nav_profile" href="perfil.html">
+     </a>
+     <a data-i18n="nav_settings" href="configuracoes.html">
+     </a>
+     <a data-i18n="nav_contact" href="contato.html">
+     </a>
+     <a data-auth="guest" data-i18n="nav_register" href="cadastro.html">
+     </a>
+     <a data-auth="guest" data-i18n="nav_login" href="login.html">
+     </a>
+     <button data-action="logout" data-auth="user" data-i18n="nav_logout">
+     </button>
+    </div>
+   </nav>
+  </header>
+  <main class="container">
+   <div class="page-heading">
+    <h1 data-i18n="profile_title">
+    </h1>
+   </div>
+   <section class="card" hidden="" id="profileGate">
+    <p data-i18n="login_required">
+    </p>
+    <div class="card-actions">
+     <a class="btn" data-i18n="nav_login" href="login.html">
+     </a>
+    </div>
+   </section>
+   <div id="profileContent">
+    <section class="card form-card">
+     <img alt="" class="profile-photo" id="previewFoto" src="img/user.png"/>
+     <label class="btn" data-i18n="choose_photo" for="fotoPerfil">
+     </label>
+     <input accept="image/*" hidden="" id="fotoPerfil" type="file"/>
+     <form class="form-grid" id="profileForm" style="margin-top:18px">
+      <label data-i18n="name" for="profileName">
+      </label>
+      <input id="profileName"/>
+      <label data-i18n="email" for="profileEmail">
+      </label>
+      <input id="profileEmail" type="email"/>
+      <button class="primary" data-i18n="edit_data">
+      </button>
+      <p id="profileStatus">
+      </p>
+     </form>
+     <div class="card-actions">
+      <a class="secondary" data-i18n="support_btn" href="contato.html">
+      </a>
+      <button class="danger" data-action="logout" data-i18n="nav_logout">
+      </button>
+     </div>
+    </section>
+   </div>
+  </main>
+  <footer>
+   <div data-i18n="footer">
+   </div>
+   <div class="steam" data-i18n="steam">
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>

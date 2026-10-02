@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Recuperar senha | Turismo 360°</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <main class="login-container">
+    <section class="auth-box">
+      <h1>Recuperar senha</h1>
+      <p class="intro">Informe o e-mail da sua conta. Você receberá um código de 6 dígitos para criar uma nova senha.</p>
+
+      <form class="form-grid" id="forgotPasswordForm">
+        <label for="recoveryEmail">E-mail</label>
+        <input id="recoveryEmail" type="email" autocomplete="email" required placeholder="seuemail@exemplo.com">
+        <button class="primary" id="sendRecoveryCode" type="submit">Enviar código</button>
+        <p id="forgotStatus"></p>
+      </form>
+
+      <form class="form-grid" id="resetPasswordForm" hidden>
+        <label for="recoveryCode">Código de 6 dígitos</label>
+        <input id="recoveryCode" type="text" inputmode="numeric" maxlength="6" required placeholder="000000">
+
+        <label for="newPassword">Nova senha</label>
+        <div class="password-field">
+          <input id="newPassword" type="password" autocomplete="new-password" required placeholder="Nova senha">
+          <button type="button" class="password-toggle" data-reset-toggle="newPassword" aria-label="Mostrar senha">👁</button>
+        </div>
+
+        <label for="confirmNewPassword">Confirmar nova senha</label>
+        <div class="password-field">
+          <input id="confirmNewPassword" type="password" autocomplete="new-password" required placeholder="Repita a nova senha">
+          <button type="button" class="password-toggle" data-reset-toggle="confirmNewPassword" aria-label="Mostrar senha">👁</button>
+        </div>
+
+        <ul class="password-rules recovery-rules">
+          <li>Mínimo de 8 caracteres</li>
+          <li>Uma letra maiúscula e uma minúscula</li>
+          <li>Um número</li>
+          <li>Um caractere especial</li>
+        </ul>
+
+        <button class="primary" type="submit">Redefinir senha</button>
+        <p id="resetStatus"></p>
+      </form>
+
+      <p class="auth-links"><a href="login.html">Voltar para o login</a></p>
+    </section>
+  </main>
+  <footer>
+    <div>Turismo 360° — Candeias, Bahia</div>
+    <div class="steam">Projeto desenvolvido para a Mostra STEAM</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
